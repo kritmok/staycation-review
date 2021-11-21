@@ -1,0 +1,29 @@
+<%- include("../partials/header") %>
+
+<div class="container-fluid">
+
+    <div class="sign-in-section">
+      <div class="sign-in-container">
+        <h1 class="text-center">Login</h1>
+        <form action="/login" method="POST">
+            <div class="mb-3">
+                <label  class="form-label" for="username">username</label>
+                <input class="form-control" type="text" name="username" id="username" required/>
+              </div>
+            <div class="mb-3">
+                <label  class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password" required/>
+              </div>
+              <button class="sign-in-button">Login</button>
+        </form>
+      </div>
+      </div>
+      
+    
+    
+
+
+</div>
+
+
+<%- include("../partials/footer") %>

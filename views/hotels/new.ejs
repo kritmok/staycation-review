@@ -1,0 +1,45 @@
+<%- include("../partials/header") %>
+
+
+<div class="container-fluid">
+  <div class="sign-in-section newnewnew">
+    <div class="sign-in-container">
+      <h1 class="text-center">New hotel</h1>
+      <form action="/hotels" method="POST">
+        <div>
+          <label class="form-label" for="title">Name</label>
+          <input class="form-control" type="text" name="hotel[title]" id="title" required/>
+        </div>
+        <div>
+          <label  class="form-label" for="location">Location</label>
+          <input class="form-control" type="text" name="hotel[location]" id="location" required/>
+        </div>
+        <div>
+          <label  class="form-label" for="image">imgURL</label>
+          <input class="form-control" type="text" name="hotel[image]" id="image" required/>
+        </div>
+        <div>
+          <label  class="form-label" for="description">description</label>
+          <textarea class="form-control" type="text" name="hotel[description]" id="description" rows="2" cols="40" required></textarea>
+        </div>
+        <label  class="form-label" for="price">Price</label>
+        <div class="input-group">
+          <span class="input-group-text">$</span>
+          <input class="form-control" type="number" name="hotel[price]" id="price" required/>
+        </div>
+        <div>
+          <button class="sign-in-button">Add hotel</button>
+        </div>
+        
+      </form>
+    </div>
+    </div>
+    
+  
+  
+
+
+</div>
+
+
+<%- include("../partials/footer") %>

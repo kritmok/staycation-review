@@ -14,8 +14,8 @@
         <div class="card">
           <img src="<%=hotel.image%>" alt="" class="card-img-top img-fluid hotel-img">
           <div class="card-body">
-            <div class="card-title"><%= hotel.title %></div>
-            <p class="card-text"><%= hotel.description %></p>
+            <div class="card-title"><b><%= hotel.title %></b></div>
+            <p class="card-text"><%= hotel.description.substring(0,100) %>...</p>
             <p class="card-text">
               <small class="text-muted"><%= hotel.location%></small>
             </p>
